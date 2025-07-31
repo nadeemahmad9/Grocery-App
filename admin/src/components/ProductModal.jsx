@@ -1030,7 +1030,7 @@ const ProductModal = ({ onClose, categories }) => {
 
     return (
         <div className="fixed inset-0 bg-black/40 z-50 flex items-center justify-center"
-            onClick={onClose}> // click outside closes modal
+            onClick={onClose}>
 
             <div className="bg-white rounded-xl p-6 max-w-2xl w-full relative overflow-y-auto max-h-[90vh]"
                 onClick={(e) => e.stopPropagation()}

@@ -289,11 +289,11 @@ const Orders = () => {
                                             </td>
                                             <td className="px-6 py-4 whitespace-nowrap">
                                                 <div className="flex items-center">
-                                                    {getStatusIcon(order.orderstatus)}
+                                                    {getStatusIcon(order.orderStatus)}
                                                     <span
-                                                        className={`ml-2 inline-flex px-2 py-1 text-xs font-semibold rounded-full ${getStatusColor(order.orderstatus)}`}
+                                                        className={`ml-2 inline-flex px-2 py-1 text-xs font-semibold rounded-full ${getStatusColor(order.orderStatus)}`}
                                                     >
-                                                        {order.orderstatus}
+                                                        {order.orderStatus}
                                                     </span>
                                                 </div>
                                             </td>
@@ -305,7 +305,7 @@ const Orders = () => {
                                                     <Eye className="h-4 w-4" />
                                                 </button>
                                                 <select
-                                                    value={order.orderstatus}
+                                                    value={order.orderStatus}
                                                     onChange={(e) => handleStatusChange(order._id, e.target.value, order.paymentStatus)}
                                                     className="text-xs border border-gray-300 rounded px-2 py-1"
                                                 >

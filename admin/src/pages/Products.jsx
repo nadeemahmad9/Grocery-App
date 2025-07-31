@@ -257,12 +257,15 @@ const Products = () => {
             </div>
 
             {/* Product Modal */}
-            <ProductModal
-                isOpen={isModalOpen}
-                onClose={handleModalClose}
-                product={editingProduct}
-                categories={categories}
-            />
+            {isModalOpen && (
+                <ProductModal
+                    isOpen={isModalOpen}
+                    onClose={handleModalClose}
+                    product={editingProduct}
+                    categories={categories}
+                />
+            )}
+
         </div>
     )
 }

@@ -119,7 +119,7 @@ const Home = () => {
                                 🍅
                             </div>
 
-                            <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4 z-30">
+                            <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4 mt-15 z-30">
                                 <h2 className="text-xl md:text-3xl font-bold mb-2 drop-shadow-lg">
                                     {banner.title}
                                 </h2>

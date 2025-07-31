@@ -225,11 +225,13 @@ const Checkout = () => {
                                             <div className="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center text-white text-sm font-bold">
                                                 {item.quantity}
                                             </div>
-                                            <div className="w-12 h-12 bg-gray-200 rounded-lg"></div>
+                                            <div className="w-12 h-12  rounded-lg">
+                                                <img src={item.product.images} alt="" />
+                                            </div>
                                             <div className="flex-1">
                                                 <h4 className="font-medium text-sm">{item.product.name}</h4>
                                                 <p className="text-xs text-gray-500">{item.product.weight}</p>
-                                                <p className="font-bold text-sm">${item.product.price}</p>
+                                                <p className="font-bold text-sm">₹{item.product.price}</p>
                                             </div>
                                         </div>
                                     ))}
@@ -238,15 +240,15 @@ const Checkout = () => {
                                 <div className="border-t pt-4 space-y-2">
                                     <div className="flex justify-between text-sm">
                                         <span>Subtotal</span>
-                                        <span>${subtotal.toFixed(2)}</span>
+                                        <span>₹{subtotal.toFixed(2)}</span>
                                     </div>
                                     <div className="flex justify-between text-sm">
                                         <span>Delivery Fee</span>
-                                        <span>{deliveryFee === 0 ? "FREE" : `$${deliveryFee}`}</span>
+                                        <span>{deliveryFee === 0 ? "FREE" : `₹${deliveryFee}`}</span>
                                     </div>
                                     <div className="flex justify-between font-bold text-lg border-t pt-2">
                                         <span>Total</span>
-                                        <span>${total.toFixed(2)}</span>
+                                        <span>₹{total.toFixed(2)}</span>
                                     </div>
                                 </div>
 
