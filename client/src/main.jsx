@@ -28,7 +28,7 @@ import './index.css'
 import App from './App.jsx'
 
 // Set backend API base URL
-axios.defaults.baseURL = "http://localhost:5006"
+axios.defaults.baseURL = "https://grocery-app-xae2.onrender.com"
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
