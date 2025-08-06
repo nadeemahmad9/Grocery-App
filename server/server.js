@@ -27,7 +27,7 @@ app.use(helmet())
 // Middleware
 app.use(
   cors({
-    origin: ["http://localhost:5173", "http://localhost:5174"],
+    origin: ['https://zestofast.netlify.app'],
     credentials: true,
   }),
 )
